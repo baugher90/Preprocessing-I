@@ -154,17 +154,50 @@ h2 {
 h3 {
   font-size: 2.5rem;
 }
+h4 {
+  font-size: 2rem;
+}
+i {
+  font-size: 1.6rem;
+  font-style: italic;
+}
 p {
   font-size: 1.6rem;
 }
 .container {
-  max-width: 800rem;
+  max-width: 1000px;
   margin: 0 auto;
-  padding: 20rem;
+  padding: 20px;
+}
+@media (max-width: 800px) {
+  .container {
+    max-width: 100%;
+  }
 }
 header nav {
   display: flex;
+  justify-content: right;
 }
 header nav a {
   margin-left: 20px;
+}
+.top-content {
+  background: lightgrey;
+  padding: 20px;
+}
+.middle-content {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
+.middle-content .mc-div {
+  width: 45%;
+}
+.bottom-content {
+  display: flex;
+  flex-wrap: wrap;
+}
+.bottom-content .ex-table {
+  width: 600px;
+  margin: 20px;
 }

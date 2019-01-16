@@ -89,15 +89,26 @@ h2 {
 h3 {
 	font-size: 2.5rem;
 }
+h4 {
+	font-size: 2rem;
+}
+i {
+	font-size: 1.6rem;
+	font-style: italic; 
+}
 p {
 	font-size: 1.6rem;
 }
 //container
 
 .container {
-	max-width: 800rem;
+	max-width: 1000px;
 	margin: 0 auto;
-	padding: 20rem;
+	padding: 20px;
+
+	@media(max-width: 800px) {
+		max-width: 100%;
+	}
 }
 
 //header
@@ -105,6 +116,7 @@ header{
 	
 	nav {
 		display: flex;
+		justify-content: right;
 
 		a {
 			margin-left: 20px;
@@ -114,7 +126,28 @@ header{
 //main-content
 
 //top-content
-
+.top-content {
+	background: lightgrey;
+	padding: 20px;
+}
 //middle-content
 
+.middle-content {
+	display: flex;
+	justify-content: space-between;
+	align-content: center;
+
+	.mc-div {
+		width: 45%;
+	}
+}
+
 //bottom-content
+.bottom-content {
+	display: flex;
+	flex-wrap: wrap;
+	.ex-table {
+		width:600px;
+		margin: 20px;
+	}
+}
